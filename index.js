@@ -5,9 +5,9 @@ const client = new Client();
 // ─────────────────────────────────────────
 //  ⚙️  CONFIG
 // ─────────────────────────────────────────
-const TOKEN           = "TON_TOKEN_ICI";
-const CHANNEL_ID      = "1494459873738489899";
-const DRAFTBOT_ID     = "TON_DRAFTBOT_ID_ICI";
+const TOKEN           = process.env.TOKEN;
+const CHANNEL_ID      = process.env.CHANNEL_ID || "1494459873738489899";
+const DRAFTBOT_ID     = process.env.DRAFTBOT_ID;
 
 const REFRESH_INTERVAL_MS  = 3_600_000;  // 1 heure
 const WAIT_FOR_RESPONSE_MS = 6_000;       // attente réponse DraftBot
